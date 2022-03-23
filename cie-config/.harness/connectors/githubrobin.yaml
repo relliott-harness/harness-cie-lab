@@ -1,0 +1,23 @@
+connector:
+  name: github-robin
+  identifier: githubrobin
+  description:
+  orgIdentifier: default
+  projectIdentifier: bootcampcirobin
+  type: Github
+  spec:
+    url: https://github.com/relliott-harness
+    validationRepo: harness-cie-lab
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: relliott-harness
+          tokenRef: robingithuntoken
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: robingithuntoken
+    executeOnDelegate: true
+    type: Account
