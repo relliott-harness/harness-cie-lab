@@ -47,6 +47,7 @@ pipeline:
                                         limits:
                                             memory: 2Gi
                                             cpu: "2"
+                                description: Added a description
                           - step:
                                 type: Run
                                 name: Build
